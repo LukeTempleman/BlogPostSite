@@ -1,0 +1,213 @@
+ 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap");
+
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+
+} 
+
+/* 
+
+.container{
+   
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.header{
+    width: auto;
+
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+nav{
+    overflow: hidden;
+    flex: 1;
+    text-align: left;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color: #fff;
+    font-size: 13;
+}
+ */
+
+.background{
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)),url(assets/background-forest.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    width: 100vw;
+    height: 100vh;
+} 
+
+
+body {
+    background-color: #eaeff1;
+    font-family: "Raleway", sans-serif;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 12px;
+    height: 214px;
+    object-fit: cover;
+  }
+
+  #container {
+    max-width: 300px;
+
+  
+    /* Center the container in middle on horizontal axis */
+  
+    margin:  50px;
+    
+  
+    /* Add empty space above the container (20% of the view height) */
+    margin-top: 20vh;
+  }
+
+  .card {
+    /* Change background color */
+    background-color: white;
+  
+    /* Add border */
+    border: 0px solid #bacdd8;
+  
+    /* Add space between the border and the content */
+    padding: 0px;
+  
+    border-radius: 12px;
+  }
+
+  
+/* Style div elements that have class equal to tag */
+.tag {
+    padding: 4px 8px;
+    border: 1px solid #e5eaed;
+  
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #788697;
+  }
+  
+  /* Style div elements that have class equal to name */
+  .name {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    
+    margin-top: 16px;
+  }
+  
+  /* Style p element */
+  p {
+    font-size: 14px;
+    color: #7f8c9b;
+    line-height: 150%;
+    margin-bottom: 10px;
+  }
+  
+  /* Style button element */
+  button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+  
+    font-weight: 600;
+    color: #ff7300;
+    background-color: #ffeee0;
+  
+    /* Button is inline-block element by default, it need to have block display for margin: 0 auto; to work */
+    margin: 0 auto;
+    display: block;
+  
+    /* Button is a clickable element, therefore it should have a pointer cursor */
+    cursor: pointer;
+  }
+  
+  .card__details {
+    /* Add space around the details */
+    padding: 16px 8px 8px 8px;
+  }
+
+  /* Add style when button is focused or hovered */
+button:focus,
+button:hover {
+  background-color: #ff7300;
+  color: #ffeee0;
+}
+
+.wrapper{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+nav{
+  position: fixed;
+  top:0 ;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 10px 90px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+nav .logo{
+  padding: 22px 20px;
+  height: 40px;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+nav ul{
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li a{
+  line-height: 40px;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover{
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 6px;
+  color: #ff9c4a;
+}
